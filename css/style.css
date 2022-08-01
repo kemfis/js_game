@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Secular+One&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin: 0 auto;
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(178, 146, 212);
+    padding: 2%;
+    position: relative;
+   
+}
+
+.score{
+    width: 200px;
+    height: 80px;
+    border: 4px solid rgb(71, 8, 68);  
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 50px;
+    color: rgb(56, 2, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+
+.score::before{
+    content: 'Игрок';
+    display: block;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(98, 237, 98);
+    border: 3px solid rgb(71, 8, 68);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.score::after{
+        content: 'Том';
+        display: block;
+        width: 50px;
+        height: 30px;
+        background-color: rgb(254, 231, 24);
+        border: 3px solid rgb(71, 8, 68);
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -25px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.result{
+    font-size: 35px;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    letter-spacing: 10px;
+    position: relative;
+    top: 5%;
+}
+
+.options_block {
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+.options {
+    width: 55%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options_block > h3 {
+    font-family: 'Secular One', serif;
+    font-size: 18px;
+    color: white;
+}
+.option {
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgb(71, 8, 68);
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color .6s ;
+}
+h3{
+    position: relative;
+    top: 5%;
+}
+.Rock {
+    background-image: url(../img/k.png);
+}
+.Rock:hover {
+    border-color: aliceblue;
+}
+.Rock:active{
+    position: relative;
+    top: 5px;
+}
+.Paper {
+    background-image: url(../img/b.png);
+}
+.Paper:hover {
+    border-color: aliceblue;
+}
+.Paper:active{
+    position: relative;
+    top: 5px;
+}
+.Scissors {
+    background-image: url(../img/n.png);
+}
+.Scissors:hover {
+    border-color: aliceblue;
+}
+.Scissors:active {
+    position: relative;
+    top: 5px;
+}
+.win{
+    background-color: green;
+}
+.lose{
+    background-color: yellow;
+}
+.draw{
+    background-color: rgb(96, 96, 234);
+}
